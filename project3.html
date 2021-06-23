@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../CSS/project3.css" media="screen and (max-width:1000px)" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <title></title>
+        <style>
+            * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            color: black;
+        }
+
+        .navigation {
+            z-index: 9999;
+            position: fixed;
+            top: 0px;
+            font-family: cursive;
+            background-image: linear-gradient(#000000, #434343);
+            font-size: 1.3rem;
+            display: flex;
+            width: 100%;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        ul li a {
+            color: white;
+        }
+
+        .header {
+
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            width: 30%;
+            /* border: 1px solid red; */
+        }
+
+        .header h3 {
+            position: relative;
+        }
+
+        .header h3 a {
+            color: white;
+        }
+
+        .header h3::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            width: 0%;
+            bottom: 0px;
+            height: 1px;
+            background-color: yellow;
+            transition: 0.3s ease-in;
+        }
+
+        .header h3:hover::after {
+            width: 100%;
+
+        }
+
+        ul {
+            width: 70%;
+            /* margin: 10px; */
+            /* border: 1px solid green; */
+            align-items: center;
+            justify-content: flex-end;
+            display: flex;
+        }
+
+        li {
+            margin: 15px;
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            position: relative;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            left: 0px;
+            bottom: -0px;
+            height: 1px;
+            transition: 0.3s ease-in;
+            background-color: red;
+
+        }
+
+        a:hover::after {
+            width: 100%;
+
+        }
+        ul li a:hover {
+            color: white;
+        }
+        .main{
+            background-image: url(../images/project3.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            width: 100%;
+            margin-top: 100px;
+            height: max-content;
+            display: flex;
+        }
+        .images{
+            display: flex;
+            /* border: 2px solid blue; */
+            width: 50%;
+            flex-direction: column;
+        }
+        .images img{
+            display: block;
+            margin: auto;
+            padding: 30px;
+            width:300px ;
+            border-radius: 45px ;
+            height: 250px;
+        }
+        .images img:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in;
+            /* overflow: hidden; */
+        }
+        .para h3{
+            text-align: center;
+            font-size: 40px;
+        }
+        .para{
+            line-height: 40px;
+            width: 50%;
+        }
+        .para img{
+            width: 450px;
+            height: 300px;
+        }
+        .social{
+            background-image: linear-gradient(#2193b0 , #6dd5ed);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+        .social a{
+            /* color: cornsilk; */
+            font-size: 30px;
+            /* border: 1px solid green; */
+            margin: 20px;
+        }
+        .fa{
+            position: relative;
+            color: black;
+        }
+        .fa-facebook:hover{
+            transform: scale(1.5);
+            color: #3B5998;
+        }
+        .fa-twitter:hover{
+            transform: scale(1.5);
+            color:  #6e4dc9;
+        }
+        .fa-google:hover{
+            transform: scale(1.5);
+            color: #dd4b39;
+        }
+        .fa-linkedin:hover{
+            transform: scale(1.5);
+            color: #007bb5;
+        }
+        .fa-youtube:hover{
+            transform: scale(1.5);
+            color: #bb0000;
+        }
+        .pagination{
+            justify-content: center;
+            display:flex;
+            margin: auto;
+            width: 10%;
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="header">
+                <h3><a href="" class="nav-link">Rahul Chand</a></h3>
+            </div>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link">Info</a></li>
+                <li><a href="index.html" class="nav-link">About us</a></li>
+                <li><a href="project1.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="images">
+                <img src="..\images\curve.jpg" class="img">
+                <img src="..\images\curve.jpg" class="img">
+                <img src="..\images\curve.jpg" class="img">
+            </div>
+            <div class="para">
+                <h3>Third Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed, enim sit iusto, exercitationem numquam repudiandae quasi sunt minima ipsum magni similique ex? Quis, nisi illum. Maxime dolor ipsum delectus! Consectetur minima eveniet ipsa temporibus sapiente dolor neque, fugiat beatae vel quibusdam. Ipsam aliquam mollitia veniam dolore, qui pariatur, enim eaque facere ex corrupti hic quia. Dicta eveniet eaque harum quo iure id impedit aspernatur, quas cum similique dolore veritatis illo esse? Illo error eveniet, eius, neque dolorum quis ad quas quia consectetur quos necessitatibus quisquam tempore. Doloremque, tempore consequatur. Totam ut officiis numquam dolorem dicta pariatur modi illum repellendus.</p>
+                <img src="..\images\curve.jpg" class="img">
+            </div>
+        </div>
+        <div class="social">
+            <a href="#" class="fa fa-facebook nav-link"></a>
+            <a href="#" class="fa fa-twitter  nav-link"></a>
+            <a href="#" class="fa fa-google  nav-link"></a>
+            <a href="#" class="fa fa-linkedin  nav-link"></a>
+            <a href="#" class="fa fa-youtube  nav-link"></a>
+        </div>
+        <nav aria-label="...">
+            <ul class="pagination pagination-md">
+              <li class="page-item ">
+                <a class="page-link" href="project1.html" tabindex="-1">1</a>
+              </li>
+              <li class="page-item "><a class="page-link" href="peoject2.html">2</a></li>
+              <li class="page-item active"><a class="page-link" href="project3.html">3</a></li>
+            </ul>
+          </nav>
+    </body>
+</html>

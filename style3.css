@@ -1,0 +1,93 @@
+body{
+  box-sizing: border-box;
+}
+.navigation{
+     align-items: center;
+    flex-direction: column; 
+    box-sizing: border-box;
+}
+ul{
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  top:20px;
+  left: 100px;
+  right: 100px;
+  box-sizing: border-box;
+}
+.header{
+  align-items: center;
+    position: relative;
+    top: 40px;
+  flex-direction: column;
+}
+/* section part */
+
+.main1 h1 p{
+font-size:2rem;
+color: wheat;
+}
+.main1 h3 p{
+  font-size: 1.5rem;
+}
+.info{
+  flex-direction:column ;
+  align-items: center;
+}
+.img img{
+  position: relative;
+  left: 0px;
+  bottom: 10px;
+} 
+.infoa h4{
+  text-align: center;
+}
+.blogssec{
+  align-items: center;
+  flex-direction: column;
+}
+.secondblog{
+  text-align: center;
+  font-size: 10px;
+}
+.thirdblog{
+  width: 30%;
+}
+.project h1{
+  width: 100%;
+}
+.projects{
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.project1 p{
+  text-align: center;
+  font-size: 15px;
+}
+
+.project2 p{
+  text-align: center;
+  font-size: 14px;
+  
+}
+.project3 p{
+  text-align: center;
+  font-size: 15px;
+}
+.personal{
+ flex-direction: column;
+text-align: center;
+}
+.icons{
+  flex-direction: row;
+ }
+.fa {
+  padding: 9px;
+  font-size: 15px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20px;
+}
