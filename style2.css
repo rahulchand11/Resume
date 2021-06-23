@@ -99,7 +99,7 @@ li a::after{
 }
 .main1::before{
     content: "";
-    background-image: url(../images/vector2.jpg);
+    background-image: url(vector2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -345,7 +345,7 @@ text-align: center;
     top: -60px;
 }
 .project h1{
-    background: url(../images/curve2.webp);
+    background: url(curve2.webp);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -364,7 +364,7 @@ text-align: center;
     position: relative;
     text-align: center;
     top: 26px;
-     background: url(../images/curve.jpg);
+     background: url(curve.jpg);
      border-radius: 45px;
      background-size: cover;
    
@@ -407,7 +407,7 @@ text-align: center;
     width: 35%;
 }
 .skills{
-    background-image: url(../images/projecthead.jpg);
+    background-image: url(projecthead.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
